@@ -19,7 +19,7 @@ class BeerShelf extends Component {
 		e.preventDefault()
 		let form = e.target
 
-		fetch('http://localhost:3000/reviews',{
+		fetch('https://brewster-api.herokuapp.com/reviews',{
 			method: 'POST',
 			headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
 			body: JSON.stringify({
@@ -35,14 +35,14 @@ class BeerShelf extends Component {
 	}
 
 	deleteReview = (id)=> {
-		fetch('http://localhost:3000/reviews/'+id,{ method: 'DELETE' })
+		fetch('https://brewster-api.herokuapp.com/reviews/'+id,{ method: 'DELETE' })
 		.then(()=> this.getShowBeer() )
 	}
 
 	checkFav = () => !!this.state.showBeer.favorites.find(fav => fav.user_id == localStorage.getItem('brewster_id'))
 
 	handleFav = () => {
-		let url= 'http://localhost:3000/favorites/'
+		let url= 'https://brewster-api.herokuapp.com/favorites/'
 		let userId = localStorage.getItem('brewster_id')
 		let fetchHash = {}
 
@@ -61,7 +61,7 @@ class BeerShelf extends Component {
 	}
 
 	getShowBeer = (id=this.state.showBeer.id)=> {
-		return fetch('http://localhost:3000/beers/'+id)
+		return fetch('https://brewster-api.herokuapp.com/beers/'+id)
 		.then(res => res.json())
 		.then(res => this.setState({  title: res.name, showBeer: res, showRevs: res.reviews }) )
 	}

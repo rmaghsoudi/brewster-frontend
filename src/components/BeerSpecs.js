@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { FaHeart, FaEdit, FaChevronCircleLeft, FaTimesCircle } from 'react-icons/fa'
 import { Button } from 'react-bootstrap'
 
-const loggedIn = !!localStorage.getItem('brewster_token')
+const loggedIn = () => !!localStorage.getItem('brewster_token')
 
 class BeerSpecs extends Component {
 

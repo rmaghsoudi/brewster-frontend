@@ -18,7 +18,7 @@ class App extends Component {
 
 	state = { loggedIn: !!localStorage.getItem('brewster_token') }
 
-	logUser = (value) => this.setState({ loggedIn: value })
+	logUser = value => this.setState({ loggedIn: value })
 
 	render() {
 	  return (

@@ -13,7 +13,7 @@ class Login extends Component {
 		e.preventDefault()
 
 		if(e.target.login_name.value && e.target.password.value) {
-			fetch('https://brewster-api.herokuapp.com/login',{
+			fetch('http://localhost:3000/login',{
 		    method: 'POST',
 		    headers: { Accept: 'application/json', 'Content-Type':'application/json' },
 		    body: JSON.stringify({

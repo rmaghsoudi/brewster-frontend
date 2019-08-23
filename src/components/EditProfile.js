@@ -5,7 +5,7 @@ import { Card, Button } from 'react-bootstrap'
 import { FaChevronCircleLeft } from 'react-icons/fa'
 
 
-const user_id = localStorage.getItem('brewster_id')
+const user_id = ()=> localStorage.getItem('brewster_id')
 
 class EditProfile extends Component {
 
@@ -29,7 +29,7 @@ class EditProfile extends Component {
 
 			// console.log('update = ', update)
 
-			fetch('https://brewster-api.herokuapp.com/users/'+user_id, {
+			fetch('http://localhost:3000/users/'+user_id, {
 				method: 'PATCH',
 				headers: { Accept: 'application/json', 'Content-Type':'application/json' },
 				body: JSON.stringify(update)

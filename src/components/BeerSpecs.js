@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { FaHeart, FaEdit, FaChevronCircleLeft, FaTimesCircle } from 'react-icons/fa'
 import { Button } from 'react-bootstrap'
 
-const loggedIn = () => !!localStorage.getItem('brewster_token')
+const loggedIn = ()=> !!localStorage.getItem('brewster_token')
 
 class BeerSpecs extends Component {
 
@@ -10,7 +10,7 @@ class BeerSpecs extends Component {
 
 	renderReviewForm = ()=>
 		<form id='review-form' onSubmit={this.props.submitReview}>
-			<FaTimesCircle className="close-btn" onClick={ e => loggedIn ? this.setState({ showReviewForm: !this.state.showReviewForm }) : null } />
+			<FaTimesCircle className="close-btn" onClick={ e => loggedIn() ? this.setState({ showReviewForm: !this.state.showReviewForm }) : null } />
 			<strong>Leave a Review!</strong>
 			<textarea id='showBeer-review-input' rows='5' cols='25' name="content" placeholder=' Type your review here'></textarea>
 			
@@ -44,7 +44,7 @@ class BeerSpecs extends Component {
 
 						<FaHeart
 							className='heart'
-							onClick={ ()=> loggedIn ? this.props.handleFav() : null }
+							onClick={ ()=> loggedIn() ? this.props.handleFav() : null }
 							style={{ color: this.props.checkFav() ? 'red' : 'grey' }}
 						/> {this.props.beer.favorites.length}
 
@@ -52,7 +52,7 @@ class BeerSpecs extends Component {
 
 						<FaEdit
 							className="notepad"
-							onClick={ e => loggedIn ? this.setState({ showReviewForm: !this.state.showReviewForm }) : null }
+							onClick={ e => loggedIn() ? this.setState({ showReviewForm: !this.state.showReviewForm }) : null }
 							style={{ color: this.state.showReviewForm ? 'DodgerBlue' : 'grey' }}
 						/> {this.props.beer.reviews.length}
 						
@@ -72,7 +72,7 @@ class BeerSpecs extends Component {
 							</div>
 
 							<div className="col-3">
-								{ loggedIn && this.state.showReviewForm ? this.renderReviewForm() : null }
+								{ loggedIn() && this.state.showReviewForm ? this.renderReviewForm() : null }
 							</div>
 						</div>
 					</div>

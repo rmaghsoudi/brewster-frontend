@@ -23,7 +23,7 @@ class Profile extends Component {
 	loggedIn = !!localStorage.getItem('brewster_token')
 
 	componentDidMount() {
-		fetch('https://brewster-api.herokuapp.com/users/profile/'+this.props.match.params.id)
+		fetch('http://localhost:3000/users/profile/'+this.props.match.params.id)
 		.then(res => res.json())
 		.then(res => {
 			if(res.error)

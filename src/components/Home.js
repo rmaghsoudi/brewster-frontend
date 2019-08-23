@@ -15,7 +15,7 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://localhost:3000/beers')
+		fetch('https://brewster-api.herokuapp.com/beers')
 		.then(res => res.json())
 		.then(res => this.setState({ allBeers: res , fBeers: res}))
 	}

@@ -13,7 +13,7 @@ class SignUp extends Component {
 		e.preventDefault()
 
 		if(e.target.password.value === e.target.confirm.value) {
-			fetch('http://localhost:3000/users',{
+			fetch('https://brewster-api.herokuapp.com/users',{
 		    method: 'POST',
 		    headers: { Accept: 'application/json', 'Content-Type':'application/json' },
 		    body: JSON.stringify({

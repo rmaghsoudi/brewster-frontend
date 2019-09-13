@@ -1,74 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Brewster
+
+   Brewster is an application for finding new beers, seeing each beer's detailed information, and keeping track of all your favorites! Users can leave reviews on each beer so that others can make good decisions about which beers to try and share opinions! The app was built with a custom Rails API in conjunction with an external beer API for the backend. On the frontend, we used React, HTML5, and CSS3.
+
+ Designed and built by: Andrew Allen, Romy Maghsoudi, and Will Jones. 
+ ![Homepage](https://user-images.githubusercontent.com/43018235/64890663-3068c600-d63e-11e9-9713-5f51a5b658dc.png)
+
+# Using the app
+
+   You'll have the option to either sign up or login to use the site. Once logged in, you'll be shown the beershelf where you'll be able to sort or filter what's shown. ![Beer Shelf](https://user-images.githubusercontent.com/43018235/64890690-378fd400-d63e-11e9-99e7-52334416b37f.png)Clicking on a beer will take you to its individual page where you'll have the options to favorite and review the beer. You'll be able to see the beer's information as well as its ratings. You can navigate to your profile page where you can add an image for yourself, check out the reviews you wrote, and see your own beer shelf containing your favorite beers which you can filter by the ones you've reviewed.![Profile Page](https://user-images.githubusercontent.com/43018235/64890701-3f4f7880-d63e-11e9-8c33-cf8bb9d66605.png)
 
 
-    Brewster is an application for finding new beers, seeing each beer's detailed information, and keeping track of all your favorites! Users can leave reviews on each beer so that others can make good decisions about which beers to try and share opinions! We have designed this application with React, a Javascript framework, a Ruby on Rails backend, and finally HTML and CSS.
-
-
-    Designed by: Andrew Allen, Romy Maghsoudi, and Will Jones. 
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## The app is currently deployed at https://brewster-4d53f.firebaseapp.com/
